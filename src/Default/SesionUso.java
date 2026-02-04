@@ -15,7 +15,9 @@ public class SesionUso {
 
     // Constructores:
     SesionUso(Double horas, Double consumo, Double temperaturaMax) {
-        // TODO: implementar
+        this.horas = horas;
+        this.consumo = consumo;
+        this.temperaturaMax = temperaturaMax;
     }
 
     // Métodos que exige el guión:
@@ -31,16 +33,22 @@ public class SesionUso {
         return temperaturaMax;
     }
 
-    // Métodos extra:
-
     public String toString() {
         // Input: ---
         // Output: Devuelve un string con los atributos de una sesión.
 
-        // Motivo: He decidido implementar esto porque la clase Dispositivo tiene un
-        // método que tiene que mostrar por pantalla la info de cada sesión y, así a
-        // priori, he pensado que la forma más fácil de hacerlo va a ser iterando sobre
-        // la ArrayList "sesiones" y llamando al método toString() de cada SesionUso
+        // El "\n" es un salto de línea y el String.format es lo que usaba tu profesor
+        // para ajustar las cifras decimales. La sintaxis es una cadena que empieza por
+        // %, el punto seguido de un número le dice que redondees a ese número de
+        // decimales y la "f" indica que el dato que vas a formatear es número en coma
+        // flotante, como los float o los double.
+        String output = "Número de horas de uso: " + String.format("%.2f", this.horas) + "\n"
+                + "Porcentaje de consumo: "
+                + String.format("%.2f", this.consumo) + "%" + "\n" + "Temperatura máxima alcanzada: "
+                + String.format("%.2f", this.temperaturaMax);
+
+        return output;
+
     }
 
 }
