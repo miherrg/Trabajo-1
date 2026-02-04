@@ -37,15 +37,14 @@ public class SesionUso {
         // Input: ---
         // Output: Devuelve un string con los atributos de una sesión.
 
-        // El "\n" es un salto de línea y el String.format es lo que usaba tu profesor
-        // para ajustar las cifras decimales. La sintaxis es una cadena que empieza por
-        // %, el punto seguido de un número le dice que redondees a ese número de
-        // decimales y la "f" indica que el dato que vas a formatear es número en coma
-        // flotante, como los float o los double.
-        String output = "Número de horas de uso: " + String.format("%.2f", this.horas) + "\n"
-                + "Porcentaje de consumo: "
-                + String.format("%.2f", this.consumo) + "%" + "\n" + "Temperatura máxima alcanzada: "
-                + String.format("%.2f", this.temperaturaMax);
+        // El String.format es lo que usaba tu profesor para ajustar las cifras
+        // decimales. La sintaxis es una cadena que empieza por %, el punto seguido de
+        // un número le dice que redondees a ese número de decimales y la "f" indica que
+        // el dato que vas a formatear es número en coma flotante, como los float o los
+        // double.
+        String output = "Horas: " + String.format("%.2f", this.horas)
+                + "Consumo: " + String.format("%.2f", this.consumo) + "%"
+                + "Temperatura máxima: " + String.format("%.2f", this.temperaturaMax) + "ºC";
 
         return output;
 
