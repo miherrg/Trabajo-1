@@ -235,9 +235,31 @@ public class Dispositivo {
             // Le sumo 1 para que al mostrar por pantalla empiece por 1 en vez de por cero.
             // No es necesario hacer nada de esto pero por un poco el coqueteo y que quede
             // bien el mensaje al mostrarlo por pantalla.
+
             int posicionSesion = sesiones.indexOf(sesion) + 1;
+
             String mensajeSesion = "  -Sesión " + posicionSesion + ": " + sesion.toString();
+
             System.out.println(mensajeSesion);
         }
     }
+
+    // Métodos propios, porque por algún motivo no exige que haya getters y los
+    // necesitamos.
+    public String getCodigo() {
+        return codigo;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public int getNumeroSesiones() {
+        return sesiones.size();
+    }
+
 }
