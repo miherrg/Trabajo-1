@@ -43,8 +43,8 @@ public class SesionUso {
         // el dato que vas a formatear es número en coma flotante, como los float o los
         // double.
         String output = "Horas: " + String.format("%.2f", this.horas)
-                + "Consumo: " + String.format("%.2f", this.consumo) + "%"
-                + "Temperatura máxima: " + String.format("%.2f", this.temperaturaMax) + "ºC";
+                + " Consumo: " + String.format("%.2f", this.consumo) + "%"
+                + " Temperatura máxima: " + String.format("%.2f", this.temperaturaMax) + "ºC";
 
         return output;
 
