@@ -168,11 +168,12 @@ public class Principal {
     }
 
     private static void mostrarEstadisticas(AlmacenDispositivos almacen) {
-        System.out.println("Media global de consumo: " + String.format("%.2f", almacen.mediaGlobalConsumo()));
+        System.out.println("Media global de consumo: " + String.format("%.2f", almacen.mediaGlobalConsumo()) + "%");
         Dispositivo dispositivoMasUsado = almacen.dispositivoMasUsado();
         if (dispositivoMasUsado == null) {
             System.out.println("No hay dispositivos en el almacén.");
         } else {
+            System.out.println("Dispositivo más usado: ");
             System.out.println(dispositivoMasUsado.toString());
         }
 

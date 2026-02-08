@@ -208,11 +208,11 @@ public class Dispositivo {
         // de consumo y media de temperatura.
 
         String output = "ID: " + this.codigo
-                + "Nombre: " + this.nombre
-                + "Tipo: " + this.tipo
-                + "Total horas: " + String.format("%.2f", this.totalHorasUso())
-                + "Consumo medio: " + String.format("%.2f", this.mediaConsumo()) + "%"
-                + "Temperatura media: " + String.format("%.2f", this.mediaTemperatura()) + "ºC";
+                + " Nombre: " + this.nombre
+                + " Tipo: " + this.tipo
+                + " Total horas: " + String.format("%.2f", this.totalHorasUso())
+                + " Consumo medio: " + String.format("%.2f", this.mediaConsumo()) + "%"
+                + " Temperatura media: " + String.format("%.2f", this.mediaTemperatura()) + "ºC";
 
         return output;
 
