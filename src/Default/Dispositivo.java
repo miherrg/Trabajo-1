@@ -212,7 +212,7 @@ public class Dispositivo {
                 + "Tipo: " + this.tipo
                 + "Total horas: " + String.format("%.2f", this.totalHorasUso())
                 + "Consumo medio: " + String.format("%.2f", this.mediaConsumo()) + "%"
-                + "Temperatura media: " + String.format("%2.f", this.mediaTemperatura()) + "ºC";
+                + "Temperatura media: " + String.format("%.2f", this.mediaTemperatura()) + "ºC";
 
         return output;
 
